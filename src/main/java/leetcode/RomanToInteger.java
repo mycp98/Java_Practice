@@ -12,27 +12,13 @@ public class RomanToInteger {
         for (int i = 0; i < s.length(); i++) {
 
             switch (s.charAt(i)) {
-                case 'M':
-                    sum += 1000;
-                    break;
-                case 'D':
-                    sum += 500;
-                    break;
-                case 'C':
-                    sum += 100;
-                    break;
-                case 'L':
-                    sum += 50;
-                    break;
-                case 'X':
-                    sum += 10;
-                    break;
-                case 'V':
-                    sum += 5;
-                    break;
-                case 'I':
-                    sum += 1;
-                    break;
+                case 'M' -> sum += 1000;
+                case 'D' -> sum += 500;
+                case 'C' -> sum += 100;
+                case 'L' -> sum += 50;
+                case 'X' -> sum += 10;
+                case 'V' -> sum += 5;
+                case 'I' -> sum += 1;
             }
             //System.out.println(i + "=" + sum);
 
